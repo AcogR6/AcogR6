@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std; 
+
+int main (){
+string userName;
+string userAge;
+string botID;
+string minimumAge = "13";
+string APIlink;
+cout << "Enter your name: ";
+cin >> userName;
+cout << "Enter your age: ";
+cin >> userAge;
+if(userAge < minimumAge){
+    cout << "Discord TTS requires the user to be older than 13";
+}else if(userAge >= minimumAge){
+    cout << "What is the discord API link?: ";
+    cin >> APIlink;
+}else{
+    cout << "invalid input";
+}
+}
